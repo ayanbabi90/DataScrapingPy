@@ -1,0 +1,127 @@
+charset=utf-8,# Downloaded from https://www.nutritionvalue.org 
+# Cherimoya, raw
+# Portion 100 g
+Nutrient, Amount, Unit, DV
+"Calories", 75.00, KCAL, 
+"Fat", 0.68, G, 1%
+"Protein", 1.57, G, 3%
+"Carbohydrate", 17.71, G, 6%
+"Retinol", 0.00, UG, 
+"Water", 79.39, G, 
+"Sugars", 12.87, G, 
+"Calcium, Ca", 10.00, MG, 1%
+"Potassium, K", 287.00, MG, 6%
+"Zinc, Zn", 0.16, MG, 1%
+"Niacin", 0.644, MG, 4%
+"Pantothenic acid", 0.345, MG, 7%
+"Vitamin B6", 0.257, MG, 20%
+"Isoleucine", 0.042, G, 3%
+"Leucine", 0.063, G, 2%
+"Lysine", 0.042, G, 2%
+"Cystine", 0.010, G, 
+"Valine", 0.063, G, 3%
+"Arginine", 0.031, G, 
+"Histidine", 0.021, G, 3%
+"Aspartic acid", 0.105, G, 
+"Serine", 0.063, G, 
+"Ash", 0.65, G, 
+"Starch", 0.00, G, 
+"Vitamin C", 12.6, MG, 14%
+"Thiamin", 0.101, MG, 8%
+"Riboflavin", 0.131, MG, 10%
+"Folate", 23.00, UG, 
+"Tryptophan", 0.031, G, 11%
+"Threonine", 0.052, G, 5%
+"Methionine", 0.021, G, 
+"Phenylalanine", 0.042, G, 
+"Tyrosine", 0.031, G, 
+"Alanine", 0.063, G, 
+"Glutamic acid", 0.199, G, 
+"Glycine", 0.052, G, 
+"Proline", 0.157, G, 
+"Fiber", 3.0, G, 11%
+"Iron, Fe", 0.27, MG, 2%
+"Magnesium, Mg", 17.00, MG, 4%
+"Phosphorus, P", 26.00, MG, 4%
+"Sodium, Na", 7.00, MG, 0%
+"Copper, Cu", 0.069, MG, 8%
+"Manganese, Mn", 0.093, MG, 4%
+"Folic acid", 0.00, UG, 
+"Lutein + zeaxanthin", 6.00, UG, 
+"Vitamin A, IU", 5.00, IU, 
+"Vitamin A, RAE", 0.00, UG, 0%
+"Carotene, beta", 2.00, UG, 
+"Carotene, alpha", 0.00, UG, 
+"Cryptoxanthin, beta", 1.00, UG, 
+"Lycopene", 0.00, UG, 
+"Vitamin B12", 0.00, UG, 0%
+"Cholesterol", 0.00, MG, 0%
+"Fatty acids, total trans", 0.000, G, 
+"Saturated fatty acids", 0.233, G, 1%
+"Octanoic acid", 0.000, G, 
+"Dodecanoic acid", 0.005, G, 
+"Tetradecanoic acid", 0.012, G, 
+"Docosahexaenoic n-3 acid (DHA)", 0.00, G, 
+"Docosanoic acid", 0.002, G, 
+"Tetradecenoic acid", 0.005, G, 
+"Hexadecenoic acid", 0.028, G, 
+"Eicosapentaenoic n-3 acid (EPA)", 0.00, G, 
+"Docosapentaenoic n-3 acid (DPA)", 0.00, G, 
+"Heptadecanoic acid", 0.005, G, 
+"Tetracosanoic acid", 0.005, G, 
+"Trans-hexadecenoic acid", 0.000, G, 
+"Tetracosenoic cis acid", 0.000, G, 
+"Cis-octadecenoic acid", 0.021, G, 
+"Linoleic acid n-6 (LA)", 0.03, G, 
+"Docosenoic cis acid", 0.000, G, 
+"Heptadecenoic acid", 0.000, G, 
+"Folate, food", 23.00, UG, 
+"Tocopherol, delta", 0.00, MG, 
+"Tocotrienol, gamma", 0.03, MG, 
+"Tocotrienol, delta", 0.05, MG, 
+"Fructose", 6.28, G, 
+"Lactose", 0.00, G, 
+"Galactose", 0.00, G, 
+"Fatty acids, total trans-monoenoic", 0.000, G, 
+"Pentadecenoic acid", 0.000, G, 
+"α-linolenic acid n-3 (ALA)", 0.16, G, 
+"Eicosadienoic n-3 acid", 0.000, G, 
+"Docosatetraenoic acid", 0.000, G, 
+"Vitamin E", 0.27, MG, 1%
+"Tocopherol, beta", 0.00, MG, 
+"Tocopherol, gamma", 0.01, MG, 
+"Tocotrienol, alpha", 0.00, MG, 
+"Tocotrienol, beta", 0.01, MG, 
+"Folate, DFE", 23.00, UG, 6%
+"Decanoic acid", 0.045, G, 
+"Hexadecanoic acid", 0.104, G, 
+"Octadecanoic acid", 0.050, G, 
+"Eicosanoic acid", 0.005, G, 
+"Octadecenoic acid", 0.021, G, 
+"Octadecadienoic acid", 0.028, G, 
+"Octadecatrienoic acid", 0.159, G, 
+"Eicosatetraenoic acid", 0.000, G, 
+"Octadecatetraenoic acid", 0.000, G, 
+"Eicosenoic acid", 0.000, G, 
+"Docosenoic acid", 0.000, G, 
+"Monounsaturated fatty acids", 0.055, G, 
+"Polyunsaturated fatty acids", 0.188, G, 
+"Pentadecanoic acid", 0.000, G, 
+"Trans-octadecenoic acid", 0.000, G, 
+"Docosenoic trans acid", 0.000, G, 
+"Trans-octadecadienoic acid", 0.000, G, 
+"Octadecadienoic CLAs acid", 0.000, G, 
+"Cis,cis-eicosadienoic n-6 acid", 0.000, G, 
+"Cis-hexadecenoic acid", 0.028, G, 
+"γ-linolenic acid n-6 (GLA)", 0.00, G, 
+"Eicosadienoic acid", 0.000, G, 
+"Fatty acids, total trans-polyenoic", 0.000, G, 
+"Eicosadienoic n-6 acid", 0.000, G, 
+"Sucrose", 0.66, G, 
+"Glucose (dextrose)", 5.93, G, 
+"Maltose", 0.00, G, 
+"Tocopherol, alpha", 0.27, MG, 
+"Phenylalanine + Tyrosine", 0.073, G, 4%
+"Methionine + Cysteine", 0.021, G, 2%
+"Net carbs", 14.71, g, 
+# Downloaded from https://www.nutritionvalue.org 
