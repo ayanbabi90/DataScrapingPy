@@ -12,10 +12,11 @@ print('/n/n==========Script Started========/n/n')
 nameList = []
 idList = []
 urlList = []
+foodList = ['fruits','vegetables','Grains','Protein_Veg','Protein_Non_veg','Dairy']
 
-with open('./fruit.json') as f:
+with open('./FoodList.json') as f:
   data = json.load(f)
-  for i in data['fruits']:
+  for i in data[foodList[5]]:
       url = "https://www.nutritionvalue.org/foodsuggest.php?token="+i
       response = requests.get(url=url,headers={'User-Agent': 'Mozilla'})
       body = response.json()[0][1]["t"]
