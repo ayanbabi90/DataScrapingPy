@@ -19,13 +19,16 @@ vegitableData = glob.glob(os.path.join("./downloadedCSV/vegitables", "*.csv"))
 
 dairyData = glob.glob(os.path.join("./downloadedCSV/Dairy", "*.csv"))
 grainsData = glob.glob(os.path.join("./downloadedCSV/Grains", "*.csv"))
-proteinNonVegData = glob.glob(os.path.join("./downloadedCSV/Protein_Non_veg", "*.csv"))
-proteinVegData = glob.glob(os.path.join("./downloadedCSV/Protein_Veg", "*.csv"))
+proteinNonVegData = glob.glob(os.path.join(
+    "./downloadedCSV/Protein_Non_veg", "*.csv"))
+proteinVegData = glob.glob(os.path.join(
+    "./downloadedCSV/Protein_Veg", "*.csv"))
 
 
 allJSON = []
 
 ultimateJSON = []
+
 
 def writeToJSONFile(path, fileName, data):
     filePathNameWExt = './' + path + '/' + fileName + '.json'
@@ -33,17 +36,17 @@ def writeToJSONFile(path, fileName, data):
         json.dump(data, fp)
 
 
-def fetchFoodDetails(catogery,data):
-   
+def fetchFoodDetails(catogery, data):
+
     for f in data:
         _uuid = str(uuid.uuid4())
         jdata = {}
         jdata['sku_uuid'] = _uuid
         jdata['category'] = catogery
-        #print(f)
-        data = pd.read_csv(f, sep='\t') 
+        # print(f)
+        data = pd.read_csv(f, sep='\t')
         for idx, i in enumerate(data.values):
-            #print(i)
+            # print(i)
             if not operator.eq("# Downloaded from https://www.nutritionvalue.org ", i[0]):
                 if idx == 0:
                     jdata["name"] = i[0].replace("# ", "")
@@ -52,38 +55,43 @@ def fetchFoodDetails(catogery,data):
                     jdata["basedOn"] = i[0].replace("# ", "")
                 if idx > 2:
                     arrayList = i[0].split(", ")
-                    key = i[0].split(", ")[0].replace(" ", "_").replace("n-3_acid_(","").replace(")","").replace("+","")
-                    #print(i[0]);
+                    key = i[0].split(", ")[0].replace(" ", "_").replace(
+                        "n-3_acid_(", "").replace(")", "").replace("+", "")
+                    # print(i[0]);
                     jsonData = {}
-                    
-                    
-                    #if len(arrayList) == 3:
-                      #  jsonData = {  "amount": arrayList[1].strip(), "unit": arrayList[2].strip(),} # "dv": arrayList[4].strip() }
+
+                    # if len(arrayList) == 3:
+                    #  jsonData = {  "amount": arrayList[1].strip(), "unit": arrayList[2].strip(),} # "dv": arrayList[4].strip() }
                     if len(arrayList) == 4:
                         amount = Decimal(arrayList[1].strip())
                         #print('4 amount: ---- ' + str(amount))
-                        jsonData = {  "amount": amount , "unit": arrayList[2].strip(),} # "dv": arrayList[4].strip() }
+                        # "dv": arrayList[4].strip() }
+                        jsonData = {"amount": amount,
+                                    "unit": arrayList[2].strip(), }
                     elif len(arrayList) == 5:
                         amount = Decimal(arrayList[2].strip())
                         #print('5 amount: ---- ' + str(amount))
-                        jsonData = {  "amount": amount, "unit": arrayList[3].strip(),} # "dv": arrayList[4].strip() }
+                        # "dv": arrayList[4].strip() }
+                        jsonData = {"amount": amount,
+                                    "unit": arrayList[3].strip(), }
 
-                    #if len(arrayList) >= 4:
+                    # if len(arrayList) >= 4:
                     #    jsonData = {  "amount": arrayList[2].strip(), "unit": arrayList[3].strip(),} # "dv": arrayList[4].strip() }
-                    #else:
+                    # else:
                     #    jsonData = {  "amount": arrayList[1].strip(), "unit": arrayList[2].strip(),} # "dv": arrayList[3].strip() }
                     jdata[key] = jsonData
                     print('key: ' + key + ' len: ' + str(len(arrayList)))
-        
+
         if jdata.__len__() > 0:
             allJSON.append(jdata)
 
-fetchFoodDetails('fruit',fruitsData)
-fetchFoodDetails('vegitable',vegitableData)
-fetchFoodDetails('dairy',dairyData)
-fetchFoodDetails('grains',grainsData)
-fetchFoodDetails('proteinNonVeg',proteinNonVegData)
-fetchFoodDetails('proteinVeg',proteinVegData)
+
+fetchFoodDetails('fruit', fruitsData)
+fetchFoodDetails('vegitable', vegitableData)
+fetchFoodDetails('dairy', dairyData)
+fetchFoodDetails('grains', grainsData)
+fetchFoodDetails('proteinNonVeg', proteinNonVegData)
+fetchFoodDetails('proteinVeg', proteinVegData)
 
 print(allJSON)
 
@@ -92,6 +100,6 @@ for item in allJSON:
         ultimateJSON.append(item)
 
 if ultimateJSON.__len__() > 0:
-   writeToJSONFile('convertedJSON','convertedJSON',ultimateJSON)
-    
+    writeToJSONFile('convertedJSON', 'convertedJSON', ultimateJSON)
+
 print('Script END')
